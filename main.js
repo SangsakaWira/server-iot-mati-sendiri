@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
 const port = 3000;
+
+app.use(cors())
 
 const LAMP_TIMEOUT = 5000; // milliseconds
 
